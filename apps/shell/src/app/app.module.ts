@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { loadRemoteModule } from '@angular-architects/module-federation';
-import { AppComponent } from './app.component';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {RouterModule} from '@angular/router';
+import {loadRemoteModule} from '@angular-architects/module-federation';
+import {AppComponent} from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -53,10 +53,11 @@ import { AppComponent } from './app.component';
             }).then((m) => m.AppModule),
         },
       ],
-      { initialNavigation: 'enabledBlocking' }
+      {initialNavigation: 'enabledBlocking'}
     ),
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+}
